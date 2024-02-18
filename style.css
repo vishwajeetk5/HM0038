@@ -67,3 +67,11 @@ h3 {
     font-weight: normal;
     text-align: center;
 }
+@page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    a {display: none;}
+    h1{display:block;}
+  }

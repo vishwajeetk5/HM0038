@@ -134,14 +134,26 @@ $fields = ($stage == 1) ? $stage1Fields : $stage2Fields;
 <head>
     <meta charset="utf-8">
     <title>Profile Completion - Nutriscape</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login_style.css">
+    <script src="https://kit.fontawesome.com/b8044e56f8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<style>
+    select{
+        padding:10px;
+        border-radius:10px;
+    }
+    label{
+        translate:-20px 90px;
+    }
+</style>
 </head>
 <body>
-<div class="container">
+<div class="container d-flex justify-content-center align-items-center flex-column">
     <h2>Profile Completion - Stage <?php echo $stage; ?>
 
 </h2>
-    <form method="post" action="profile.php">
+    <form  class="form" method="post" action="profile.php">
         <?php foreach ($fields as $field): ?>
             <label for="<?php echo $field; ?>"><?php echo ucfirst(str_replace('_', ' ', $field)); ?>:</label><br>
             <?php if ($field === 'gender'): ?>
@@ -151,9 +163,9 @@ $fields = ($stage == 1) ? $stage1Fields : $stage2Fields;
                     <option value="Other">Other</option>
                 </select><br><br>
             <?php elseif ($field === 'units'): ?>
-                <input type="radio" name="<?php echo $field; ?>" value="Imperial" id="imperial" checked>
+                <input class="client-info" type="radio" name="<?php echo $field; ?>" value="Imperial" id="imperial" checked>
                 <label for="imperial">Imperial</label>
-                <input type="radio" name="<?php echo $field; ?>" value="Metric" id="metric">
+                <input class="client-info" type="radio" name="<?php echo $field; ?>" value="Metric" id="metric">
                 <label for="metric">Metric</label><br><br>
             <?php elseif ($field === 'activity_level'): ?>
                 <select name="<?php echo $field; ?>" id="<?php echo $field; ?>">
@@ -168,25 +180,26 @@ $fields = ($stage == 1) ? $stage1Fields : $stage2Fields;
                     <option value="Lose fat">Lose fat</option>
                     <option value="Build muscle">Build muscle</option>
                     <option value="Maintain weight">Maintain weight</option>
-                </select><br><br>
+                </select ><br><br>
                 <?php elseif ($field === 'daily_meals'): ?>
-                <input type="checkbox" name="daily_meals[]" value="breakfast" id="breakfast">
+                    
+                <input class="client-info" type="checkbox" name="daily_meals[]" value="breakfast" id="breakfast">
                 <label for="breakfast">Breakfast</label>
-                <input type="checkbox" name="daily_meals[]" value="lunch" id="lunch">
+                <input class="client-info" type="checkbox" name="daily_meals[]" value="lunch" id="lunch">
                 <label for="lunch">Lunch</label>
-                <input type="checkbox" name="daily_meals[]" value="dinner" id="dinner">
+                <input class="client-info" type="checkbox" name="daily_meals[]" value="dinner" id="dinner">
                 <label for="dinner">Dinner</label>
-                <input type="checkbox" name="daily_meals[]" value="snack" id="snack">
+                <input class="client-info" type="checkbox" name="daily_meals[]" value="snack" id="snack">
                 <label for="snack">Snack</label><br><br>
             <?php else: ?>
-                <input type="text" name="<?php echo $field; ?>" id="<?php echo $field; ?>"><br><br>
+                <input class="client-info" type="text" name="<?php echo $field; ?>" id="<?php echo $field; ?>"><br><br>
             <?php endif; ?>
         <?php endforeach; ?>
-        <input type="hidden" name="stage" value="<?php echo $stage; ?>">
+        <input class="client-info" type="hidden" name="stage" value="<?php echo $stage; ?>">
         <?php if ($stage == 1): ?>
-            <input type="submit" value="Next">
+            <input class="client-info" type="submit" value="Next">
         <?php else: ?>
-            <input type="submit" value="Finish">
+            <input class="client-info" type="submit" value="Finish">
         <?php endif; ?>
     </form>
 </div>

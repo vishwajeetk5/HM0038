@@ -1,0 +1,23 @@
+/* print.css */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.show_data {
+    max-width: 700px;
+    background-color: #FFEAA7;
+    border-radius: 15px;
+}
+
+#suggestion {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#suggestion img {
+    float: left;
+    margin-right: 20px;
+}

@@ -36,13 +36,12 @@
 ?>
 <div id="container">
   <div id="left">
-    <h1 id="welcome">Welcome</h1>
+    <h1 id="welcome">Welcome to NutriCare</h1>
     <p id="lorem">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-      Vivamus sodales eros non arcu pellentesque convallis.<br>
-      Nunc dignissim lectus in malesuada porta.<br>
-      Proin ac erat sed urna congue suscipit.<br>
-      Morbi aliquet eget nisl id ornare.
+    where your journey to a healthier lifestyle begins!<br>
+     "Fuel your body, nourish your soul, and transform your life" <br>
+     with our personalized nutrition tracking, delicious recipes, and curated workout plans.
+     <br> Let NUTRICARE be your guide to a vibrant and empowered you!
     </p>
   </div>
   <div id="right">

@@ -52,12 +52,14 @@
 
   #welcome, #lorem {
     margin: 10px;
+    color:black;
     text-shadow: var(--box-shadow);
   }
   #welcome {
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 300;
-    margin-top: 150px;
+    margin-top: 90px;
+    color:black;
     text-shadow: var(--box-shadow);
   }
   
