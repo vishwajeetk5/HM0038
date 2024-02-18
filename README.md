@@ -12,20 +12,25 @@ BMI Calculation: The website calculates the user's Body Mass Index (BMI) based o
 Personalized Recommendations: Based on the user's profile and nutritional data, the website provides personalized recommendations for a balanced diet.
 Recipe Suggestions: Users can receive suggestions for healthy recipes based on their dietary preferences and nutritional needs.
 Educational Resources: The website offers educational resources on nutrition and healthy eating habits to help users make informed choices.
+
 Technologies Used
 Frontend: HTML, CSS, JavaScript
 Backend: PHP
 Database: MySQL
+
 Installation
 Clone the repository: git clone https://github.com/yourusername/nutricare.git
-Import the database schema from database.sql
+create database named LoginSystem
+Import the database schema from inject.sql
 Configure the database connection in db.php
 Start a PHP server and open the website in your browser
+
 Usage
 Register or login to your account
 Complete your profile with accurate information
 Track your daily nutritional intake and view personalized recommendations
 Explore healthy recipes and educational resources
+
 Contributors
 Vishwajeet Koshti
 Shrikant Jadhav 
