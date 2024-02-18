@@ -12,6 +12,9 @@ BMI Calculation: The website calculates the user's Body Mass Index (BMI) based o
 Personalized Recommendations: Based on the user's profile and nutritional data, the website provides personalized recommendations for a balanced diet.
 Recipe Suggestions: Users can receive suggestions for healthy recipes based on their dietary preferences and nutritional needs.
 Educational Resources: The website offers educational resources on nutrition and healthy eating habits to help users make informed choices.
+![image](https://github.com/vishwajeetk5/HM0038/assets/119106702/9868f829-265b-4a89-8f32-06888141e6cf)
+![image](https://github.com/vishwajeetk5/HM0038/assets/119106702/c5887273-0cdb-4664-908b-7c725fc2b799)
+![image](https://github.com/vishwajeetk5/HM0038/assets/119106702/cf6d3d09-9d8c-4d02-adbd-6f5a25c83847)
 
 Technologies Used
 Frontend: HTML, CSS, JavaScript
